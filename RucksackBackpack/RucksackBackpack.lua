@@ -4,7 +4,7 @@ f:RegisterEvent("CHAT_MSG_SAY")
 f:RegisterEvent("CHAT_MSG_GUILD")
 f:RegisterEvent("CHAT_MSG_RAID")
 f:SetScript("OnEvent", function(self, event, msg, sender, _, _, _, _, _, chanNumber, ...)
-  if msg:match("Rucksack Backpack!") then
+  if msg:match("Rucksack Backpack!") and (sender ~= UnitName("player")) then
     if event == "CHAT_MSG_PARTY" then
       SendChatMessage("Backpack Rucksack!", "PARTY", nil, chanNumber)
     elseif event == "CHAT_MSG_SAY" then
