@@ -1,0 +1,6 @@
+## Interface: 80300
+## Title: RucksackBackpack
+## Notes: Responds with "Backpack Rucksack!" to people typing "Rucksack Backpack!" in say, party, guild and raid chat
+## Author: Gorgamol
+
+RucksackBackpack.lua
